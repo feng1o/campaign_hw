@@ -1,0 +1,5 @@
+#this is ignore file
+*.exe
+!xx.exe
+*.a[ut]\{1,\}
+Debug/
