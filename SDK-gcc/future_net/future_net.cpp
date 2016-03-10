@@ -18,7 +18,10 @@ int main(int argc, char *argv[])
     std::cout<<".............................\n\n";
     char *condition_file = argv[2];
     condition_num = read_file(&condition, 1, condition_file);
-
+	for(int i=0;i<condition_num;i++)
+		{
+			std::cout<<" -path-"<<condition[i] <<std::endl;
+		}
     search_route(graph, edge_num, condition);
 
     char *result_file = argv[3];
