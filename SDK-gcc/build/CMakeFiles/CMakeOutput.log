@@ -28,15 +28,15 @@ The CXX compiler identification is GNU, found in "/home/huawei-code-craft/SDK-gc
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_22086/fast"
+Run Build Command:"/usr/bin/gmake" "cmTC_e4091/fast"
 gmake[1]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-/usr/bin/gmake -f CMakeFiles/cmTC_22086.dir/build.make CMakeFiles/cmTC_22086.dir/build
+/usr/bin/gmake -f CMakeFiles/cmTC_e4091.dir/build.make CMakeFiles/cmTC_e4091.dir/build
 gmake[2]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_22086.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_22086.dir/testCCompiler.c.o   -c /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_22086
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22086.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_22086.dir/testCCompiler.c.o  -o cmTC_22086 -rdynamic 
+Building C object CMakeFiles/cmTC_e4091.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_e4091.dir/testCCompiler.c.o   -c /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_e4091
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4091.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_e4091.dir/testCCompiler.c.o  -o cmTC_e4091 -rdynamic 
 gmake[2]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 gmake[1]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 
@@ -44,15 +44,15 @@ gmake[1]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CM
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_9399a/fast"
+Run Build Command:"/usr/bin/gmake" "cmTC_7f679/fast"
 gmake[1]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-/usr/bin/gmake -f CMakeFiles/cmTC_9399a.dir/build.make CMakeFiles/cmTC_9399a.dir/build
+/usr/bin/gmake -f CMakeFiles/cmTC_7f679.dir/build.make CMakeFiles/cmTC_7f679.dir/build
 gmake[2]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9399a.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_9399a.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.4/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_9399a
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9399a.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_9399a.dir/CMakeCCompilerABI.c.o  -o cmTC_9399a -rdynamic  
+Building C object CMakeFiles/cmTC_7f679.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_7f679.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.4/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_7f679
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f679.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_7f679.dir/CMakeCCompilerABI.c.o  -o cmTC_7f679 -rdynamic  
 Using built-in specs.
 Target: i686-redhat-linux
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i686 --build=i686-redhat-linux
@@ -60,8 +60,8 @@ Thread model: posix
 gcc version 4.4.7 20120313 (Red Hat 4.4.7-16) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/i686-redhat-linux/4.4.7/:/usr/libexec/gcc/i686-redhat-linux/4.4.7/:/usr/libexec/gcc/i686-redhat-linux/:/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/:/usr/libexec/gcc/i686-redhat-linux/4.4.7/:/usr/libexec/gcc/i686-redhat-linux/:/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/
 LIBRARY_PATH=/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/4.4.7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9399a' '-rdynamic' '-mtune=generic' '-march=i686'
- /usr/libexec/gcc/i686-redhat-linux/4.4.7/collect2 --eh-frame-hdr --build-id -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_9399a /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crt1.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crti.o /usr/lib/gcc/i686-redhat-linux/4.4.7/crtbegin.o -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7/../../.. CMakeFiles/cmTC_9399a.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i686-redhat-linux/4.4.7/crtend.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7f679' '-rdynamic' '-mtune=generic' '-march=i686'
+ /usr/libexec/gcc/i686-redhat-linux/4.4.7/collect2 --eh-frame-hdr --build-id -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_7f679 /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crt1.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crti.o /usr/lib/gcc/i686-redhat-linux/4.4.7/crtbegin.o -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7/../../.. CMakeFiles/cmTC_7f679.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i686-redhat-linux/4.4.7/crtend.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crtn.o
 gmake[2]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 gmake[1]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 
@@ -70,15 +70,15 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_9399a/fast"]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_7f679/fast"]
   ignore line: [gmake[1]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_9399a.dir/build.make CMakeFiles/cmTC_9399a.dir/build]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_7f679.dir/build.make CMakeFiles/cmTC_7f679.dir/build]
   ignore line: [gmake[2]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_9399a.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_9399a.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.4/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_9399a]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9399a.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_9399a.dir/CMakeCCompilerABI.c.o  -o cmTC_9399a -rdynamic  ]
+  ignore line: [Building C object CMakeFiles/cmTC_7f679.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_7f679.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.4/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_7f679]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f679.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_7f679.dir/CMakeCCompilerABI.c.o  -o cmTC_7f679 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [Target: i686-redhat-linux]
   ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i686 --build=i686-redhat-linux]
@@ -86,8 +86,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.4.7 20120313 (Red Hat 4.4.7-16) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/i686-redhat-linux/4.4.7/:/usr/libexec/gcc/i686-redhat-linux/4.4.7/:/usr/libexec/gcc/i686-redhat-linux/:/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/:/usr/libexec/gcc/i686-redhat-linux/4.4.7/:/usr/libexec/gcc/i686-redhat-linux/:/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/4.4.7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9399a' '-rdynamic' '-mtune=generic' '-march=i686']
-  link line: [ /usr/libexec/gcc/i686-redhat-linux/4.4.7/collect2 --eh-frame-hdr --build-id -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_9399a /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crt1.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crti.o /usr/lib/gcc/i686-redhat-linux/4.4.7/crtbegin.o -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7/../../.. CMakeFiles/cmTC_9399a.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i686-redhat-linux/4.4.7/crtend.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7f679' '-rdynamic' '-mtune=generic' '-march=i686']
+  link line: [ /usr/libexec/gcc/i686-redhat-linux/4.4.7/collect2 --eh-frame-hdr --build-id -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_7f679 /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crt1.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crti.o /usr/lib/gcc/i686-redhat-linux/4.4.7/crtbegin.o -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7/../../.. CMakeFiles/cmTC_7f679.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i686-redhat-linux/4.4.7/crtend.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crtn.o]
     arg [/usr/libexec/gcc/i686-redhat-linux/4.4.7/collect2] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [--build-id] ==> ignore
@@ -98,14 +98,14 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib/ld-linux.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_9399a] ==> ignore
+    arg [cmTC_7f679] ==> ignore
     arg [/usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crt1.o] ==> ignore
     arg [/usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crti.o] ==> ignore
     arg [/usr/lib/gcc/i686-redhat-linux/4.4.7/crtbegin.o] ==> ignore
     arg [-L/usr/lib/gcc/i686-redhat-linux/4.4.7] ==> dir [/usr/lib/gcc/i686-redhat-linux/4.4.7]
     arg [-L/usr/lib/gcc/i686-redhat-linux/4.4.7] ==> dir [/usr/lib/gcc/i686-redhat-linux/4.4.7]
     arg [-L/usr/lib/gcc/i686-redhat-linux/4.4.7/../../..] ==> dir [/usr/lib/gcc/i686-redhat-linux/4.4.7/../../..]
-    arg [CMakeFiles/cmTC_9399a.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_7f679.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -134,15 +134,15 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_3266a/fast"
+Run Build Command:"/usr/bin/gmake" "cmTC_f3e95/fast"
 gmake[1]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-/usr/bin/gmake -f CMakeFiles/cmTC_3266a.dir/build.make CMakeFiles/cmTC_3266a.dir/build
+/usr/bin/gmake -f CMakeFiles/cmTC_f3e95.dir/build.make CMakeFiles/cmTC_f3e95.dir/build
 gmake[2]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3266a.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_3266a.dir/feature_tests.c.o   -c /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_3266a
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3266a.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_3266a.dir/feature_tests.c.o  -o cmTC_3266a -rdynamic 
+Building C object CMakeFiles/cmTC_f3e95.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_f3e95.dir/feature_tests.c.o   -c /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_f3e95
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3e95.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_f3e95.dir/feature_tests.c.o  -o cmTC_f3e95 -rdynamic 
 gmake[2]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 gmake[1]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 
@@ -156,15 +156,15 @@ gmake[1]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CM
 Detecting C [-std=c89] compiler features compiled with the following output:
 Change Dir: /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_c4ec7/fast"
+Run Build Command:"/usr/bin/gmake" "cmTC_a8407/fast"
 gmake[1]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-/usr/bin/gmake -f CMakeFiles/cmTC_c4ec7.dir/build.make CMakeFiles/cmTC_c4ec7.dir/build
+/usr/bin/gmake -f CMakeFiles/cmTC_a8407.dir/build.make CMakeFiles/cmTC_a8407.dir/build
 gmake[2]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c4ec7.dir/feature_tests.c.o
-/usr/bin/cc    -std=c89 -o CMakeFiles/cmTC_c4ec7.dir/feature_tests.c.o   -c /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c4ec7
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4ec7.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_c4ec7.dir/feature_tests.c.o  -o cmTC_c4ec7 -rdynamic 
+Building C object CMakeFiles/cmTC_a8407.dir/feature_tests.c.o
+/usr/bin/cc    -std=c89 -o CMakeFiles/cmTC_a8407.dir/feature_tests.c.o   -c /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_a8407
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8407.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_a8407.dir/feature_tests.c.o  -o cmTC_a8407 -rdynamic 
 gmake[2]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 gmake[1]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 
@@ -176,15 +176,15 @@ gmake[1]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CM
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_5f670/fast"
+Run Build Command:"/usr/bin/gmake" "cmTC_3c8c1/fast"
 gmake[1]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-/usr/bin/gmake -f CMakeFiles/cmTC_5f670.dir/build.make CMakeFiles/cmTC_5f670.dir/build
+/usr/bin/gmake -f CMakeFiles/cmTC_3c8c1.dir/build.make CMakeFiles/cmTC_3c8c1.dir/build
 gmake[2]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5f670.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_5f670.dir/testCXXCompiler.cxx.o -c /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_5f670
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f670.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_5f670.dir/testCXXCompiler.cxx.o  -o cmTC_5f670 -rdynamic 
+Building CXX object CMakeFiles/cmTC_3c8c1.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_3c8c1.dir/testCXXCompiler.cxx.o -c /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_3c8c1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c8c1.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_3c8c1.dir/testCXXCompiler.cxx.o  -o cmTC_3c8c1 -rdynamic 
 gmake[2]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 gmake[1]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 
@@ -192,15 +192,15 @@ gmake[1]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CM
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_9d85e/fast"
+Run Build Command:"/usr/bin/gmake" "cmTC_9b405/fast"
 gmake[1]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-/usr/bin/gmake -f CMakeFiles/cmTC_9d85e.dir/build.make CMakeFiles/cmTC_9d85e.dir/build
+/usr/bin/gmake -f CMakeFiles/cmTC_9b405.dir/build.make CMakeFiles/cmTC_9b405.dir/build
 gmake[2]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_9d85e.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_9d85e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.4/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_9d85e
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d85e.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_9d85e.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9d85e -rdynamic  
+Building CXX object CMakeFiles/cmTC_9b405.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_9b405.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.4/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_9b405
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b405.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_9b405.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9b405 -rdynamic  
 Using built-in specs.
 Target: i686-redhat-linux
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i686 --build=i686-redhat-linux
@@ -208,8 +208,8 @@ Thread model: posix
 gcc version 4.4.7 20120313 (Red Hat 4.4.7-16) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/i686-redhat-linux/4.4.7/:/usr/libexec/gcc/i686-redhat-linux/4.4.7/:/usr/libexec/gcc/i686-redhat-linux/:/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/:/usr/libexec/gcc/i686-redhat-linux/4.4.7/:/usr/libexec/gcc/i686-redhat-linux/:/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/
 LIBRARY_PATH=/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/4.4.7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9d85e' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i686'
- /usr/libexec/gcc/i686-redhat-linux/4.4.7/collect2 --eh-frame-hdr --build-id -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_9d85e /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crt1.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crti.o /usr/lib/gcc/i686-redhat-linux/4.4.7/crtbegin.o -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7/../../.. CMakeFiles/cmTC_9d85e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-redhat-linux/4.4.7/crtend.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9b405' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ /usr/libexec/gcc/i686-redhat-linux/4.4.7/collect2 --eh-frame-hdr --build-id -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_9b405 /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crt1.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crti.o /usr/lib/gcc/i686-redhat-linux/4.4.7/crtbegin.o -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7/../../.. CMakeFiles/cmTC_9b405.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-redhat-linux/4.4.7/crtend.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crtn.o
 gmake[2]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 gmake[1]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 
@@ -218,15 +218,15 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_9d85e/fast"]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_9b405/fast"]
   ignore line: [gmake[1]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_9d85e.dir/build.make CMakeFiles/cmTC_9d85e.dir/build]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_9b405.dir/build.make CMakeFiles/cmTC_9b405.dir/build]
   ignore line: [gmake[2]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_9d85e.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_9d85e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.4/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_9d85e]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d85e.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_9d85e.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9d85e -rdynamic  ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_9b405.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_9b405.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.4/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_9b405]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b405.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_9b405.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9b405 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [Target: i686-redhat-linux]
   ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i686 --build=i686-redhat-linux]
@@ -234,8 +234,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.4.7 20120313 (Red Hat 4.4.7-16) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/i686-redhat-linux/4.4.7/:/usr/libexec/gcc/i686-redhat-linux/4.4.7/:/usr/libexec/gcc/i686-redhat-linux/:/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/:/usr/libexec/gcc/i686-redhat-linux/4.4.7/:/usr/libexec/gcc/i686-redhat-linux/:/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/4.4.7/:/usr/lib/gcc/i686-redhat-linux/4.4.7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9d85e' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i686']
-  link line: [ /usr/libexec/gcc/i686-redhat-linux/4.4.7/collect2 --eh-frame-hdr --build-id -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_9d85e /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crt1.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crti.o /usr/lib/gcc/i686-redhat-linux/4.4.7/crtbegin.o -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7/../../.. CMakeFiles/cmTC_9d85e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-redhat-linux/4.4.7/crtend.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9b405' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  link line: [ /usr/libexec/gcc/i686-redhat-linux/4.4.7/collect2 --eh-frame-hdr --build-id -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_9b405 /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crt1.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crti.o /usr/lib/gcc/i686-redhat-linux/4.4.7/crtbegin.o -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7 -L/usr/lib/gcc/i686-redhat-linux/4.4.7/../../.. CMakeFiles/cmTC_9b405.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-redhat-linux/4.4.7/crtend.o /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crtn.o]
     arg [/usr/libexec/gcc/i686-redhat-linux/4.4.7/collect2] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [--build-id] ==> ignore
@@ -246,14 +246,14 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib/ld-linux.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_9d85e] ==> ignore
+    arg [cmTC_9b405] ==> ignore
     arg [/usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crt1.o] ==> ignore
     arg [/usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crti.o] ==> ignore
     arg [/usr/lib/gcc/i686-redhat-linux/4.4.7/crtbegin.o] ==> ignore
     arg [-L/usr/lib/gcc/i686-redhat-linux/4.4.7] ==> dir [/usr/lib/gcc/i686-redhat-linux/4.4.7]
     arg [-L/usr/lib/gcc/i686-redhat-linux/4.4.7] ==> dir [/usr/lib/gcc/i686-redhat-linux/4.4.7]
     arg [-L/usr/lib/gcc/i686-redhat-linux/4.4.7/../../..] ==> dir [/usr/lib/gcc/i686-redhat-linux/4.4.7/../../..]
-    arg [CMakeFiles/cmTC_9d85e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_9b405.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -280,15 +280,15 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++0x] compiler features compiled with the following output:
 Change Dir: /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_dd7e0/fast"
+Run Build Command:"/usr/bin/gmake" "cmTC_75056/fast"
 gmake[1]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-/usr/bin/gmake -f CMakeFiles/cmTC_dd7e0.dir/build.make CMakeFiles/cmTC_dd7e0.dir/build
+/usr/bin/gmake -f CMakeFiles/cmTC_75056.dir/build.make CMakeFiles/cmTC_75056.dir/build
 gmake[2]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_dd7e0.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++0x -o CMakeFiles/cmTC_dd7e0.dir/feature_tests.cxx.o -c /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_dd7e0
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd7e0.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_dd7e0.dir/feature_tests.cxx.o  -o cmTC_dd7e0 -rdynamic 
+Building CXX object CMakeFiles/cmTC_75056.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++0x -o CMakeFiles/cmTC_75056.dir/feature_tests.cxx.o -c /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_75056
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75056.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_75056.dir/feature_tests.cxx.o  -o cmTC_75056 -rdynamic 
 gmake[2]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 gmake[1]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 
@@ -355,15 +355,15 @@ gmake[1]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CM
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_3456e/fast"
+Run Build Command:"/usr/bin/gmake" "cmTC_b7d10/fast"
 gmake[1]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-/usr/bin/gmake -f CMakeFiles/cmTC_3456e.dir/build.make CMakeFiles/cmTC_3456e.dir/build
+/usr/bin/gmake -f CMakeFiles/cmTC_b7d10.dir/build.make CMakeFiles/cmTC_b7d10.dir/build
 gmake[2]: Entering directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3456e.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_3456e.dir/feature_tests.cxx.o -c /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_3456e
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3456e.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_3456e.dir/feature_tests.cxx.o  -o cmTC_3456e -rdynamic 
+Building CXX object CMakeFiles/cmTC_b7d10.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_b7d10.dir/feature_tests.cxx.o -c /home/huawei-code-craft/SDK-gcc/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b7d10
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7d10.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_b7d10.dir/feature_tests.cxx.o  -o cmTC_b7d10 -rdynamic 
 gmake[2]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 gmake[1]: Leaving directory `/home/huawei-code-craft/SDK-gcc/build/CMakeFiles/CMakeTmp'
 
