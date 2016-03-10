@@ -1,5 +1,7 @@
 #!/bin/bash
 cd `dirname $0`
+
+echo $0
 rm -f lib/lib_io.a
 cp lib/32/lib_io.a lib/
 rm -fr bin

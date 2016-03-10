@@ -2,7 +2,8 @@
 #include "route.h"
 #include "lib_io.h"
 #include "lib_time.h"
-
+#include "stdio.h"
+#include "iostream"
 int main(int argc, char *argv[])
 {
     print_time("Begin");
@@ -13,6 +14,8 @@ int main(int argc, char *argv[])
 
     char *graph_file = argv[1];
     edge_num = read_file(graph, 5000, graph_file);
+    printf("\n .........edge_num = %d\n", edge_num);
+    std::cout<<".............................\n\n";
     char *condition_file = argv[2];
     condition_num = read_file(&condition, 1, condition_file);
 
