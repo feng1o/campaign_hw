@@ -15,4 +15,18 @@ typedef  enum enu_VertexInfo{ c_useLessTag = 0,  c_haveToGoTag = 1, c_startTag =
 	
 void conditionCharToUshort(u_short  vertexCondition[600], const char *condition);
 
+class cMyVertex{
+	public:
+		cMyVertex() = default;
+		cMyVertex(const cMyVertex &vertex);
+		~cMyVertex(){};
+	private:
+		u_short                     m_nodeNum =700;
+		bool 			 m_travelKey = false;
+		bool  			 m_known = false;
+		u_short			 m_inDgree = 0;
+		u_short 			 m_outDgree = 0;
+		unsigned long long m_cost = 0;
+		cMyVertex*          m_pNext = nullptr;
+			};
 #endif
