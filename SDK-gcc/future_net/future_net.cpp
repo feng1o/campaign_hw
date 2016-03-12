@@ -37,8 +37,7 @@ int main(int argc, char *argv[])
 	unsigned int condition_len = strlen(condition);
 
     std::cout << "\n\n..必走点.................."  << condition_len << std::endl;
-    std::cout<<" condition:" <<  condition <<std::endl;
-
+    std::cout << "conditon __: " << condition << std::endl;
     #if 0 
 	for(int i=0; i<=condition_len ;i++)
 		{
