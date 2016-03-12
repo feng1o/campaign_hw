@@ -3,10 +3,8 @@
 #include "lib_io.h"
 #include "lib_time.h"
 
-#include "stdio.h"
-#include "stdlib.h"
-#include "string.h"
 #include "iostream"
+#include "cstring"
 //#include "time.h"
 int main(int argc, char *argv[])
 {
@@ -23,7 +21,7 @@ int main(int argc, char *argv[])
     //clock_t clockEnd;
     //clockEnd = clock();
     //std::cout << "readfile time =" << static_cast<double>(clockEnd - clockBegin)/CLOCKS_PER_SEC <<std::endl;
-    printf("\n.........edge_num = %d\n", edge_num);
+    std::cout << "\n.........edge_num =" << edge_num << std::endl;
 	for(int i=0; i<edge_num; i++) // edge_num
 		{
             std::cout << "graph[" << i <<"]" << graph[i]  ;
@@ -34,7 +32,7 @@ int main(int argc, char *argv[])
     char *condition_file = argv[2];
     condition_num = read_file(&condition, 1, condition_file);
 
-	unsigned int condition_len = strlen(condition);
+	unsigned int condition_len = std::strlen(condition);
 
     std::cout << "\n\n..必走点.................."  << condition_len << std::endl;
     std::cout << "conditon __: " << condition << std::endl;

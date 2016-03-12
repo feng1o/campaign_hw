@@ -1,9 +1,10 @@
 #ifndef __MY_DEALDATA_H_
 #define __MY_DEALDATA_H_
 
-#include"iostream.h"
-#include"memory.h"
-#include"cassert"
+#include "iostream"
+#include "memory"
+#include "cstring"
+#include "cassert"
 
 #define def_myAssert(x)  do{if(nullptr == (x)) \
 	std::cout << "error"  <<  __LINE__ << __DATE__ << __FUNCTION__ << __FILE__ <<std::endl; \

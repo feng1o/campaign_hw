@@ -150,6 +150,33 @@ future_net.cpp.s:
 	$(MAKE) -f CMakeFiles/future_net.dir/build.make CMakeFiles/future_net.dir/future_net.cpp.s
 .PHONY : future_net.cpp.s
 
+my_dealData.o: my_dealData.cpp.o
+
+.PHONY : my_dealData.o
+
+# target to build an object file
+my_dealData.cpp.o:
+	$(MAKE) -f CMakeFiles/future_net.dir/build.make CMakeFiles/future_net.dir/my_dealData.cpp.o
+.PHONY : my_dealData.cpp.o
+
+my_dealData.i: my_dealData.cpp.i
+
+.PHONY : my_dealData.i
+
+# target to preprocess a source file
+my_dealData.cpp.i:
+	$(MAKE) -f CMakeFiles/future_net.dir/build.make CMakeFiles/future_net.dir/my_dealData.cpp.i
+.PHONY : my_dealData.cpp.i
+
+my_dealData.s: my_dealData.cpp.s
+
+.PHONY : my_dealData.s
+
+# target to generate assembly for a file
+my_dealData.cpp.s:
+	$(MAKE) -f CMakeFiles/future_net.dir/build.make CMakeFiles/future_net.dir/my_dealData.cpp.s
+.PHONY : my_dealData.cpp.s
+
 route.o: route.cpp.o
 
 .PHONY : route.o
@@ -189,6 +216,9 @@ help:
 	@echo "... future_net.o"
 	@echo "... future_net.i"
 	@echo "... future_net.s"
+	@echo "... my_dealData.o"
+	@echo "... my_dealData.i"
+	@echo "... my_dealData.s"
 	@echo "... route.o"
 	@echo "... route.i"
 	@echo "... route.s"

@@ -13,20 +13,30 @@ lib_io.h
 /home/huawei-code-craft/SDK-gcc/future_net/lib_io.h
 lib_time.h
 /home/huawei-code-craft/SDK-gcc/future_net/lib_time.h
-stdio.h
-/home/huawei-code-craft/SDK-gcc/future_net/stdio.h
-stdlib.h
-/home/huawei-code-craft/SDK-gcc/future_net/stdlib.h
-string.h
-/home/huawei-code-craft/SDK-gcc/future_net/string.h
 iostream
 /home/huawei-code-craft/SDK-gcc/future_net/iostream
+cstring
+/home/huawei-code-craft/SDK-gcc/future_net/cstring
 
 /home/huawei-code-craft/SDK-gcc/future_net/lib/lib_io.h
 
 /home/huawei-code-craft/SDK-gcc/future_net/lib/lib_record.h
 
 /home/huawei-code-craft/SDK-gcc/future_net/lib/lib_time.h
+
+/home/huawei-code-craft/SDK-gcc/future_net/my_dealData.cpp
+my_dealData.h
+/home/huawei-code-craft/SDK-gcc/future_net/my_dealData.h
+
+/home/huawei-code-craft/SDK-gcc/future_net/my_dealData.h
+iostream
+/home/huawei-code-craft/SDK-gcc/future_net/iostream
+memory
+/home/huawei-code-craft/SDK-gcc/future_net/memory
+cstring
+/home/huawei-code-craft/SDK-gcc/future_net/cstring
+cassert
+/home/huawei-code-craft/SDK-gcc/future_net/cassert
 
 /home/huawei-code-craft/SDK-gcc/future_net/route.cpp
 route.h
@@ -35,6 +45,10 @@ lib_record.h
 /home/huawei-code-craft/SDK-gcc/future_net/lib_record.h
 stdio.h
 -
+my_dealData.h
+/home/huawei-code-craft/SDK-gcc/future_net/my_dealData.h
+iomanip
+/home/huawei-code-craft/SDK-gcc/future_net/iomanip
 
 /home/huawei-code-craft/SDK-gcc/future_net/route.h
 

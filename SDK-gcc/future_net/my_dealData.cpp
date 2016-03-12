@@ -3,7 +3,7 @@
 *
 */
 
-#include"my_dealdata.h"
+#include "my_dealData.h"
 
 
 void conditionCharToUshort(u_short  vertexCondition[600], const char *condition)
@@ -13,8 +13,8 @@ void conditionCharToUshort(u_short  vertexCondition[600], const char *condition)
 	for(int i =0 ; i < 600;  ++i){
 		vertexCondition[i] = useLessVertex;
 	}
-	u_short startVertex =700;
-	u_short endVertex = 700;
+	extern u_short startVertex;
+	extern u_short endVertex;
 	u_short  index=0;
 	u_short count_index = 0;
 	long long condition_length = std::strlen(condition);

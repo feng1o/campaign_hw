@@ -57,9 +57,33 @@ include CMakeFiles/future_net.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/future_net.dir/flags.make
 
+CMakeFiles/future_net.dir/my_dealData.cpp.o: CMakeFiles/future_net.dir/flags.make
+CMakeFiles/future_net.dir/my_dealData.cpp.o: /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/huawei-code-craft/SDK-gcc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/future_net.dir/my_dealData.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/future_net.dir/my_dealData.cpp.o -c /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.cpp
+
+CMakeFiles/future_net.dir/my_dealData.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/future_net.dir/my_dealData.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.cpp > CMakeFiles/future_net.dir/my_dealData.cpp.i
+
+CMakeFiles/future_net.dir/my_dealData.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/future_net.dir/my_dealData.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.cpp -o CMakeFiles/future_net.dir/my_dealData.cpp.s
+
+CMakeFiles/future_net.dir/my_dealData.cpp.o.requires:
+
+.PHONY : CMakeFiles/future_net.dir/my_dealData.cpp.o.requires
+
+CMakeFiles/future_net.dir/my_dealData.cpp.o.provides: CMakeFiles/future_net.dir/my_dealData.cpp.o.requires
+	$(MAKE) -f CMakeFiles/future_net.dir/build.make CMakeFiles/future_net.dir/my_dealData.cpp.o.provides.build
+.PHONY : CMakeFiles/future_net.dir/my_dealData.cpp.o.provides
+
+CMakeFiles/future_net.dir/my_dealData.cpp.o.provides.build: CMakeFiles/future_net.dir/my_dealData.cpp.o
+
+
 CMakeFiles/future_net.dir/future_net.cpp.o: CMakeFiles/future_net.dir/flags.make
 CMakeFiles/future_net.dir/future_net.cpp.o: /home/huawei-code-craft/SDK-gcc/future_net/future_net.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/huawei-code-craft/SDK-gcc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/future_net.dir/future_net.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/huawei-code-craft/SDK-gcc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/future_net.dir/future_net.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/future_net.dir/future_net.cpp.o -c /home/huawei-code-craft/SDK-gcc/future_net/future_net.cpp
 
 CMakeFiles/future_net.dir/future_net.cpp.i: cmake_force
@@ -83,7 +107,7 @@ CMakeFiles/future_net.dir/future_net.cpp.o.provides.build: CMakeFiles/future_net
 
 CMakeFiles/future_net.dir/route.cpp.o: CMakeFiles/future_net.dir/flags.make
 CMakeFiles/future_net.dir/route.cpp.o: /home/huawei-code-craft/SDK-gcc/future_net/route.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/huawei-code-craft/SDK-gcc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/future_net.dir/route.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/huawei-code-craft/SDK-gcc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/future_net.dir/route.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/future_net.dir/route.cpp.o -c /home/huawei-code-craft/SDK-gcc/future_net/route.cpp
 
 CMakeFiles/future_net.dir/route.cpp.i: cmake_force
@@ -107,18 +131,20 @@ CMakeFiles/future_net.dir/route.cpp.o.provides.build: CMakeFiles/future_net.dir/
 
 # Object files for target future_net
 future_net_OBJECTS = \
+"CMakeFiles/future_net.dir/my_dealData.cpp.o" \
 "CMakeFiles/future_net.dir/future_net.cpp.o" \
 "CMakeFiles/future_net.dir/route.cpp.o"
 
 # External object files for target future_net
 future_net_EXTERNAL_OBJECTS =
 
+/home/huawei-code-craft/SDK-gcc/bin/future_net: CMakeFiles/future_net.dir/my_dealData.cpp.o
 /home/huawei-code-craft/SDK-gcc/bin/future_net: CMakeFiles/future_net.dir/future_net.cpp.o
 /home/huawei-code-craft/SDK-gcc/bin/future_net: CMakeFiles/future_net.dir/route.cpp.o
 /home/huawei-code-craft/SDK-gcc/bin/future_net: CMakeFiles/future_net.dir/build.make
 /home/huawei-code-craft/SDK-gcc/bin/future_net: /home/huawei-code-craft/SDK-gcc/lib/lib_io.a
 /home/huawei-code-craft/SDK-gcc/bin/future_net: CMakeFiles/future_net.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/huawei-code-craft/SDK-gcc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/huawei-code-craft/SDK-gcc/bin/future_net"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/huawei-code-craft/SDK-gcc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/huawei-code-craft/SDK-gcc/bin/future_net"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/future_net.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,6 +152,7 @@ CMakeFiles/future_net.dir/build: /home/huawei-code-craft/SDK-gcc/bin/future_net
 
 .PHONY : CMakeFiles/future_net.dir/build
 
+CMakeFiles/future_net.dir/requires: CMakeFiles/future_net.dir/my_dealData.cpp.o.requires
 CMakeFiles/future_net.dir/requires: CMakeFiles/future_net.dir/future_net.cpp.o.requires
 CMakeFiles/future_net.dir/requires: CMakeFiles/future_net.dir/route.cpp.o.requires
 

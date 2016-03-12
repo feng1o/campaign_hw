@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/future_net.dir/my_dealData.cpp.o"
   "CMakeFiles/future_net.dir/future_net.cpp.o"
   "CMakeFiles/future_net.dir/route.cpp.o"
   "/home/huawei-code-craft/SDK-gcc/bin/future_net.pdb"
