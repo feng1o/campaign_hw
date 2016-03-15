@@ -20,6 +20,11 @@ void search_route(char *graph[5000], int edge_num, char *condition)
     }
     std::cout << "startVertex = " << startVertex << std::endl;
     std::cout << "endVertex   = " << endVertex << std::endl;
+   
+
+
+
+
     
     unsigned short result[] = {2, 6, 3};//示例中的一个解
     for (int i = 0; i < 3; i++)
