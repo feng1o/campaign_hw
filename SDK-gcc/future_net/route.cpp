@@ -32,7 +32,15 @@ void search_route(char *graph[5000], int edge_num, char *condition)
     std::cout << "vertexNum = " << vertexNum << std::endl;
    
 
+    for (int i = 0; i <= vertexNum; ++i)
+    {
+        std::cout << "mytovertex" << i << " is:" << mapMyNoToVertex[i] << std::endl;
+    }
 
+    for (int i = 0; i <= vertexNum-1; ++i) //less than 1
+    {
+        std::cout << "vertextomy" << i << " is " << mapVertexToMyNo[i]  << std::endl;
+    }
 
 
 

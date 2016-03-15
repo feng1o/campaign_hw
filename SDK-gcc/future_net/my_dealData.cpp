@@ -65,8 +65,8 @@ void conditionCharToUshort(u_short  vertexCondition[600], const char *condition)
 u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeNum){
 	extern std::map<int, int> mapVertexToMyNo;
 	extern std::map<int, int> mapMyNoToVertex;
-	mapMyNoToVertex.clear();
-	mapVertexToMyNo.clear();
+	//mapMyNoToVertex.clear();
+	//mapVertexToMyNo.clear();
 	int vertexNum = 0;
 	u_short intPlachHolder[10];
 	int lastPosition = -1;
@@ -74,11 +74,11 @@ u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeN
 	int 	startNode = -1;
 	int     endNode = -1;
 	u_short subCost = 700;
+	int index = 0;
 	for(int i = 0 ;  i < edgeNum ;  ++i){
-		for(int n = 0; graph[i][n] != '\n'; ++n){
+		for(int n = 0; graph[i][n] != '\0'; ++n){
 			if(graph[i][n]  <  '0'  || graph[i][n]  >  '9'){
 				if( lastPosition != -1){
-					int index = 0;
 					for(int j=0;  j <= lastPosition;  ++j){
 						index =  index*10 + intPlachHolder[j];
 					}
@@ -93,14 +93,16 @@ u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeN
 						mapVertexToMyNo[index] = ++vertexNum;  //start with 1
 						mapMyNoToVertex[vertexNum] = index;
 					}
+				}
 					else if (-1 == endNode)
 					{
 						endNode = index;
-						if(mapVertexToMyNo.count(index) == 0){
+						if(mapVertexToMyNo.count(index) == 0)
+						{
 						mapVertexToMyNo[index] = ++vertexNum;  //start with 1
 						mapMyNoToVertex[vertexNum] = index;
 					}
-					}
+				}
 					else if (700 == subCost)
 					{
 						std::cout << "const is =" << index <<std::endl;
@@ -111,13 +113,13 @@ u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeN
 						subCost = 700;
 					}
 					lastPosition = -1;
+					index = 0;
 				}
-			}
 				continue;
-		}
+			}
 			intPlachHolder[++lastPosition] = graph[i][n] - '0';
+		}
 	}
-}
 	return vertexNum;
 }
 
