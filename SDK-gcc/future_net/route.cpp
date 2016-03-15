@@ -5,7 +5,7 @@
 
 #include "my_dealData.h"
 #include "iomanip"
-#include "map"
+
 
 u_short startVertex =700;
 u_short endVertex = 700;
@@ -26,6 +26,10 @@ void search_route(char *graph[5000], int edge_num, char *condition)
     }
     std::cout << "startVertex = " << startVertex << std::endl;
     std::cout << "endVertex   = " << endVertex << std::endl;
+
+    std::cout << "\ntest grap to croslist ................................" << std::endl;
+    u_short vertexNum = graphCharToCrosList(NULL, graph, edge_num);
+    std::cout << "vertexNum = " << vertexNum << std::endl;
    
 
 

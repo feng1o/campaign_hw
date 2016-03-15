@@ -5,7 +5,7 @@
 #include "memory"
 #include "cstring"
 #include "cassert"
-
+#include "map"
 #define def_myAssert(x)  do{if(nullptr == (x)) \
 	std::cout << "error"  <<  __LINE__ << __DATE__ << __FUNCTION__ << __FILE__ <<std::endl; \
 	std::abort(); }\
@@ -20,10 +20,11 @@ struct str_crossListNode
 {
 	int 		   row;
 	int			   column;	
-	int            vertexNumber;
 	u_short		   adjacentCost;
+	int            edgeNumber;
 	pCrossListNode down;
 	pCrossListNode right;
+	bool		   known;
 };
 
 typedef struct 
@@ -39,6 +40,6 @@ typedef struct
 
 
 void conditionCharToUshort(u_short  vertexCondition[600], const char *condition);
-void graphCharToCrosList(tyCrossList* crosslist, const char *graph[5000]);
+u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeNum);
 
 #endif
