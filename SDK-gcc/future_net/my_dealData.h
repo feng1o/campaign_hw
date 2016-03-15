@@ -33,11 +33,12 @@ typedef struct
 	u_short 		rowCount;
 	u_short 		columnCount;
 	int				edgeCount;
-}crossList;
+}tyCrossList;
 
 
 
 
 void conditionCharToUshort(u_short  vertexCondition[600], const char *condition);
+void graphCharToCrosList(tyCrossList* crosslist, const char *graph[5000]);
 
 #endif

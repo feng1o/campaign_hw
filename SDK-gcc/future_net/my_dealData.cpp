@@ -62,9 +62,11 @@ void conditionCharToUshort(u_short  vertexCondition[600], const char *condition)
 	}
 }
 
+void graphCharToCrosList(tyCrossList* crosslist, const char *graph[5000]){
+	extern std::map<int, int> mapVertexToMyNo;
+	extern std::map<int, int> mapMyNoToVertex;
 
-
-
+}
 
 
 
