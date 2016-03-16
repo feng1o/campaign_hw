@@ -67,7 +67,7 @@ u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeN
 	extern std::map<int, int> mapMyNoToVertex;
 	//mapMyNoToVertex.clear();
 	//mapVertexToMyNo.clear();
-	int vertexNum = 0;
+	int vertexNum = -1;
 	u_short intPlachHolder[10];
 	int lastPosition = -1;
 	int edgeIdentifer = -1;  //read edge num
@@ -90,7 +90,7 @@ u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeN
 					{
 						startNode = index;
 						if(mapVertexToMyNo.count(index) == 0){
-						mapVertexToMyNo[index] = ++vertexNum;  //start with 1
+						mapVertexToMyNo[index] = ++vertexNum;  //start with 0
 						mapMyNoToVertex[vertexNum] = index;
 					}
 				}
@@ -99,7 +99,7 @@ u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeN
 						endNode = index;
 						if(mapVertexToMyNo.count(index) == 0)
 						{
-						mapVertexToMyNo[index] = ++vertexNum;  //start with 1
+						mapVertexToMyNo[index] = ++vertexNum;  //start with 0
 						mapMyNoToVertex[vertexNum] = index;
 					}
 				}
@@ -120,7 +120,7 @@ u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeN
 			intPlachHolder[++lastPosition] = graph[i][n] - '0';
 		}
 	}
-	return vertexNum;
+	return vertexNum + 1;  //start from 0
 }
 
 
