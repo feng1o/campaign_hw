@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/huawei-code-craft/SDK-gcc/future_net/future_net.cpp
+route.h
+/home/huawei-code-craft/SDK-gcc/future_net/route.h
+lib_io.h
+/home/huawei-code-craft/SDK-gcc/future_net/lib_io.h
+lib_time.h
+/home/huawei-code-craft/SDK-gcc/future_net/lib_time.h
+stdio.h
+/home/huawei-code-craft/SDK-gcc/future_net/stdio.h
+stdlib.h
+/home/huawei-code-craft/SDK-gcc/future_net/stdlib.h
+string.h
+/home/huawei-code-craft/SDK-gcc/future_net/string.h
+iostream
+/home/huawei-code-craft/SDK-gcc/future_net/iostream
+
+/home/huawei-code-craft/SDK-gcc/future_net/lib/lib_io.h
+
+/home/huawei-code-craft/SDK-gcc/future_net/lib/lib_record.h
+
+/home/huawei-code-craft/SDK-gcc/future_net/lib/lib_time.h
+
+/home/huawei-code-craft/SDK-gcc/future_net/route.cpp
+route.h
+/home/huawei-code-craft/SDK-gcc/future_net/route.h
+lib_record.h
+/home/huawei-code-craft/SDK-gcc/future_net/lib_record.h
+stdio.h
+-
+
+/home/huawei-code-craft/SDK-gcc/future_net/route.h
+
