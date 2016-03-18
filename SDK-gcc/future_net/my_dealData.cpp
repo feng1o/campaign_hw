@@ -105,7 +105,7 @@ u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeN
 				}
 					else if (700 == subCost)
 					{
-						std::cout << "const is =" << index <<std::endl;
+						std::cout << "const is =" << index <<std::std::endl;
 
 						edgeIdentifer = -1;  //read edge num
 						startNode = -1;
@@ -129,7 +129,7 @@ u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeN
 pCrossListHead creatCrossList(int edgenum)
 {
 	//def_MyAssert(edgenum);
-	pCrossListHead crossList = new crossListHead{nullptr, nullptr, 0, edgenum };
+	pCrossListHead crossList = new crossListHead{NULL, NULL, 0, edgenum };
 	crossList->head_row = new struct str_crosslistHeadRow[600];
 	crossList->head_colunm = new struct str_crosslistHeadColumn[600];
 	return crossList;
@@ -140,13 +140,13 @@ void initCrossListHeadNode(pCrossListHead crossList, signed short nodeNum)
 	crossList->head_row[nodeNum].known = false;
 	crossList->head_row[nodeNum].layer = 0;
 	crossList->head_row[nodeNum].outDgree = 0;
-	crossList->head_row[nodeNum].next = nullptr;
+	crossList->head_row[nodeNum].next = NULL;
 
 	crossList->head_colunm[nodeNum].is_key = false;
 	crossList->head_colunm[nodeNum].known = false;
 	crossList->head_colunm[nodeNum].layer = 0;
 	crossList->head_colunm[nodeNum].inDgree = 0;
-	crossList->head_colunm[nodeNum].next = nullptr;
+	crossList->head_colunm[nodeNum].next = NULL;
 }
 u_short insertCrossList(pCrossListHead crossList, signed short nodeNum, const u_short startNode, \
 	const u_short endNode, u_short cost, const int edgenum)
@@ -163,7 +163,7 @@ u_short insertCrossList(pCrossListHead crossList, signed short nodeNum, const u_
 		++nodeNum;
 		initCrossListHeadNode(crossList, nodeNum);
 	}
-	pcrossListArc cListArc = new crossListArc{ startNode, endNode, cost, edgenum, nullptr, nullptr };
+	pcrossListArc cListArc = new crossListArc{ startNode, endNode, cost, edgenum, NULL, NULL };
 	//def_MyAssert(cListArc);
 	pcrossListArc tmpArc = crossList->head_row[startNode].next;
 	crossList->head_row[startNode].next = cListArc;
@@ -180,26 +180,26 @@ void printCrossList(pCrossListHead crosslist, int num)
 {
 	for (int i = 0; i < num; i++)
 	{
-		std::cout << "headrow " << i << " iskey=" << crosslist->head_row[i].is_key << " outdgree=" << crosslist->head_row[i].outDgree << endl;
+		std::cout << "headrow " << i << " iskey=" << crosslist->head_row[i].is_key << " outdgree=" << crosslist->head_row[i].outDgree << std::endl;
 	}
 	for (int i = 0; i < num; ++i){
 		pcrossListArc arc = crosslist->head_row[i].next;
 		while (arc){
 			std::cout << "start =" << arc->startNode << " end =" << arc->endNode << " cost =" << arc->Cost \
-				<< " edge=" << arc->edgeNumber << endl;
+				<< " edge=" << arc->edgeNumber << std::endl;
 			arc = arc->right;
 		}
 	}
 	std::cout << "..............................\n";
 	for (int i = 0; i < num; i++)
 	{
-		std::cout << "headrow " << i << " iskey=" << crosslist->head_colunm[i].is_key << " outdgree=" << crosslist->head_colunm[i].inDgree << endl;
+		std::cout << "headrow " << i << " iskey=" << crosslist->head_colunm[i].is_key << " outdgree=" << crosslist->head_colunm[i].inDgree << std::endl;
 	}
 	for (int i = 0; i < num; ++i){
 		pcrossListArc arc = crosslist->head_colunm[i].next;
 		while (arc){
 			std::cout << "start =" << arc->startNode << " end =" << arc->endNode << " cost =" << arc->Cost \
-				<< " edge=" << arc->edgeNumber << endl;
+				<< " edge=" << arc->edgeNumber << std::endl;
 			arc = arc->down;
 		}
 	}
@@ -221,7 +221,7 @@ int main()
 	nodeNum = insertCrossList(crossList, nodeNum, 0, 3, 10, 2);
 	nodeNum = insertCrossList(crossList, nodeNum, 1, 3, 5, 60);
 	nodeNum = insertCrossList(crossList, nodeNum, 2, 3, 2, 4);
-	std::cout << nodeNum << endl;
+	std::cout << nodeNum << std::endl;
 	printCrossList(crossList, nodeNum+1);
 	
 	return 0;

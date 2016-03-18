@@ -45,6 +45,11 @@ typedef struct str_crossList      crossListHead;
 typedef struct str_crossList*      pCrossListHead;
 struct str_crossListArc
 {
+	str_crossListArc(startnode, endnode, cost, edgenumber, NULL, NULL) :\
+		startNode(startnode), endNode(endnode), Cost(cost), edgeNumber(edgenumber),\
+		down(NULL), right(NULL) {};
+	~str_crossListArc()
+		{};
 	const u_short 		   startNode;
 	const u_short		   endNode;
 	u_short			       Cost;
