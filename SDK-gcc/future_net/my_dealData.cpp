@@ -65,6 +65,9 @@ void conditionCharToUshort(u_short  vertexCondition[600], const char *condition)
 u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeNum){
 	extern std::map<int, int> mapVertexToMyNo;
 	extern std::map<int, int> mapMyNoToVertex;
+	extern pCrossListHead  crosslist ;	
+	extern signed short  creatNodeNum ; // record the created crosslist head index
+
 	//mapMyNoToVertex.clear();
 	//mapVertexToMyNo.clear();
 	int vertexNum = -1;
@@ -105,8 +108,10 @@ u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeN
 				}
 					else if (700 == subCost)
 					{
-						std::cout << "const is =" << index <<std::endl;
-
+						subCost = index;
+						//std::cout << "const is =" << index <<std::endl;
+						creatNodeNum = insertCrossList(crosslist, creatNodeNum,  startNode, \
+							endNode, subCost, edgeIdentifer);
 						edgeIdentifer = -1;  //read edge num
 						startNode = -1;
 						endNode = -1;
