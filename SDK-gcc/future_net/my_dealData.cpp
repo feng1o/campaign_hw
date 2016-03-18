@@ -105,7 +105,7 @@ u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeN
 				}
 					else if (700 == subCost)
 					{
-						std::cout << "const is =" << index <<std::std::endl;
+						std::cout << "const is =" << index <<std::endl;
 
 						edgeIdentifer = -1;  //read edge num
 						startNode = -1;
