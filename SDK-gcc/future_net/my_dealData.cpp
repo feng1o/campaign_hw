@@ -62,10 +62,9 @@ void conditionCharToUshort(u_short  vertexCondition[600], const char *condition)
 	}
 }
 
-u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeNum){
+u_short graphCharToCrosList(pCrossListHead crosslist, char *graph[5000], int edgeNum){
 	extern std::map<int, int> mapVertexToMyNo;
 	extern std::map<int, int> mapMyNoToVertex;
-	extern pCrossListHead  crosslist ;	
 	extern signed short  creatNodeNum ; // record the created crosslist head index
 
 	//mapMyNoToVertex.clear();
@@ -109,9 +108,9 @@ u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeN
 					else if (700 == subCost)
 					{
 						subCost = index;
-						//std::cout << "const is =" << index <<std::endl;
-						creatNodeNum = insertCrossList(crosslist, creatNodeNum,  startNode, \
-							endNode, subCost, edgeIdentifer);
+						std::cout << "cost is =" << index <<std::endl;
+						creatNodeNum = insertCrossList(crosslist, creatNodeNum,  mapVertexToMyNo[startNode], \
+							mapVertexToMyNo[endNode], subCost, edgeIdentifer);
 						edgeIdentifer = -1;  //read edge num
 						startNode = -1;
 						endNode = -1;
@@ -185,7 +184,7 @@ void printCrossList(pCrossListHead crosslist, int num)
 {
 	for (int i = 0; i < num; i++)
 	{
-		std::cout << "headrow " << i << " iskey=" << crosslist->head_row[i].is_key << " outdgree=" << crosslist->head_row[i].outDgree << std::endl;
+		std::cout << "headrow " << i << " iskey=" << crosslist->head_row[i].is_key << " outdgree= " << crosslist->head_row[i].outDgree << std::endl;
 	}
 	for (int i = 0; i < num; ++i){
 		pcrossListArc arc = crosslist->head_row[i].next;
@@ -198,7 +197,7 @@ void printCrossList(pCrossListHead crosslist, int num)
 	std::cout << "..............................\n";
 	for (int i = 0; i < num; i++)
 	{
-		std::cout << "headrow " << i << " iskey=" << crosslist->head_colunm[i].is_key << " outdgree=" << crosslist->head_colunm[i].inDgree << std::endl;
+		std::cout << "headcol " << i << " iskey=" << crosslist->head_colunm[i].is_key << "  indgree= " << crosslist->head_colunm[i].inDgree << std::endl;
 	}
 	for (int i = 0; i < num; ++i){
 		pcrossListArc arc = crosslist->head_colunm[i].next;

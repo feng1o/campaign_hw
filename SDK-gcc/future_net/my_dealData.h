@@ -12,7 +12,7 @@
 	while(0)
 typedef unsigned short u_short;
 typedef  enum enu_VertexInfo{ c_useLessTag = 0,  c_haveToGoTag = 1, c_startTag = 2,c_endTag = 3}vertexInfo;
-
+#if 0
 typedef struct str_crossListNode   crossListNode;
 typedef struct str_crossListNode*  pCrossListNode;
 
@@ -37,12 +37,13 @@ typedef struct
 }tyCrossList;
 
 
-
+#endif 
 /* crosslist */
 typedef struct str_crossListArc   crossListArc;
 typedef struct str_crossListArc*  pcrossListArc;
 typedef struct str_crossList      crossListHead;
 typedef struct str_crossList*      pCrossListHead;
+
 struct str_crossListArc
 {
 	//str_crossListArc(startnode, endnode, cost, edgenumber, NULL, NULL) : startNode(startnode), \
@@ -89,6 +90,6 @@ void printCrossList(pCrossListHead crosslist, int num);
 
 
 void conditionCharToUshort(u_short  vertexCondition[600], const char *condition);
-u_short graphCharToCrosList(tyCrossList* crosslist, char *graph[5000], int edgeNum);
+u_short graphCharToCrosList(pCrossListHead crosslist, char *graph[5000], int edgeNum);
 
 #endif
