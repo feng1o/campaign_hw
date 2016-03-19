@@ -12,6 +12,8 @@ u_short endVertex = 700;
 
 std::map<int, int> mapVertexToMyNo;
 std::map<int, int> mapMyNoToVertex;
+//std::map<int, std::pair<u_short, int>> mapDeleteDuplicateArc;  //record arc, delete duplicate arc,
+std::map<int, int> mapDeleteDuplicateArc;  //record arc, delete duplicate arc,
 
 extern signed short  creatNodeNum = -1;  //vertex num
 

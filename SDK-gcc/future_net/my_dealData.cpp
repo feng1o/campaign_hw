@@ -66,7 +66,7 @@ u_short graphCharToCrosList(pCrossListHead crosslist, char *graph[5000], int edg
 	extern std::map<int, int> mapVertexToMyNo;
 	extern std::map<int, int> mapMyNoToVertex;
 	extern signed short  creatNodeNum ; // record the created crosslist head index
-
+	extern std::map<int, int> mapDeleteDuplicateArc;
 	//mapMyNoToVertex.clear();
 	//mapVertexToMyNo.clear();
 	int vertexNum = -1;
@@ -108,9 +108,22 @@ u_short graphCharToCrosList(pCrossListHead crosslist, char *graph[5000], int edg
 					else if (700 == subCost)
 					{
 						subCost = index;
-						std::cout << "cost is =" << index <<std::endl;
-						creatNodeNum = insertCrossList(crosslist, creatNodeNum,  mapVertexToMyNo[startNode], \
-							mapVertexToMyNo[endNode], subCost, edgeIdentifer);
+						u_short MyStartNode = mapVertexToMyNo[startNode];
+						u_short MyEndNode = mapVertexToMyNo[endNode];
+						//std::cout << "cost is =" << index <<std::endl;
+						int mapDeleteDuplicateArcNo = MyStartNode*100 + MyEndNode;
+						if(mapDeleteDuplicateArc.count(mapDeleteDuplicateArcNo) == 1 && \
+							mapDeleteDuplicateArc[mapDeleteDuplicateArcNo] > subCost){   //make sure just one arc with minist cost between tow vertex
+								
+							pcrossListArc tArc = crosslist->head_row[MyStartNode].next;
+							for(; tArc != NULL && (tArc->startNode != MyStartNode || tArc->endNode != MyEndNode); tArc = tArc->right);
+								tArc->Cost = subCost;
+						}
+						else {
+							mapDeleteDuplicateArc[mapDeleteDuplicateArcNo] = subCost;
+							creatNodeNum = insertCrossList(crosslist, creatNodeNum, MyStartNode, \
+								MyEndNode, subCost, edgeIdentifer);
+					}
 						edgeIdentifer = -1;  //read edge num
 						startNode = -1;
 						endNode = -1;
