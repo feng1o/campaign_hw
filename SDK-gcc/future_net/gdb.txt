@@ -1,0 +1,675 @@
+Ambiguous command "se logging file ~/Desktop/xx": search, section, select-frame, set.
+Ambiguous command "se logging file ": search, section, select-frame, set.
+2	#include "route.h"
+3	#include "lib_io.h"
+4	#include "lib_time.h"
+5	
+6	#include "iostream"
+7	#include "cstring"
+8	//#include "time.h"
+9	int main(int argc, char *argv[])
+10	{
+11	    print_time("Begin");
+Currently logging to "gdb.txt".
+Future logs will be written to /home/logg.txt.
+Logs will be appended to the log file.
+Output will be logged and displayed.
+Currently logging to "gdb.txt".
+Future logs will be written to /home/logg.txt.
+Logs will be appended to the log file.
+Output will be logged and displayed.
+Undefined command: "-r".  Try "help".
+12	    //clock_t clockBegin;
+13	    //clockBegin = clock();
+14	    char *graph[5000];
+15	    int edge_num;
+16	    char *condition;
+17	    int condition_num;
+18	
+19	    char *graph_file = argv[1];
+20	    edge_num = read_file(graph, 5000, graph_file);
+21	    //clock_t clockEnd;
+No breakpoints or watchpoints.
+Breakpoint 1 at 0x804d3a9: file /home/huawei-code-craft/SDK-gcc/future_net/future_net.cpp, line 11.
+Num     Type           Disp Enb Address    What
+1       breakpoint     keep y   0x0804d3a9 in main(int, char**) at /home/huawei-code-craft/SDK-gcc/future_net/future_net.cpp:11
+List of classes of commands:
+
+aliases -- Aliases of other commands
+breakpoints -- Making program stop at certain points
+data -- Examining data
+files -- Specifying and examining files
+internals -- Maintenance commands
+obscure -- Obscure features
+running -- Running the program
+stack -- Examining the stack
+status -- Status inquiries
+support -- Support facilities
+tracepoints -- Tracing of program execution without stopping the program
+user-defined -- User-defined commands
+
+Type "help" followed by a class name for a list of commands in that class.
+Type "help all" for the list of all commands.
+Type "help" followed by command name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+Aliases of other commands.
+
+List of commands:
+
+ni -- Step one instruction
+rc -- Continue program being debugged but run it in reverse
+rni -- Step backward one instruction
+rsi -- Step backward exactly one instruction
+si -- Step one instruction exactly
+stepping -- Specify single-stepping behavior at a tracepoint
+tp -- Set a tracepoint at specified line or function
+tty -- Set terminal for future runs of program being debugged
+where -- Print backtrace of all stack frames
+ws -- Specify single-stepping behavior at a tracepoint
+
+Type "help" followed by command name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+Set breakpoint at specified line or function.
+break [LOCATION] [thread THREADNUM] [if CONDITION]
+LOCATION may be a line number, function name, or "*" and an address.
+If a line number is specified, break at start of code for that line.
+If a function is specified, break at start of code for that function.
+If an address is specified, break at that exact address.
+With no LOCATION, uses current execution address of the selected
+stack frame.  This is useful for breaking on return to a stack frame.
+
+THREADNUM is the number from "info threads".
+CONDITION is a boolean expression.
+
+Multiple breakpoints at one place are permitted, and useful if their
+conditions are different.
+
+Do "help breakpoints" for info on other commands dealing with breakpoints.
+Generic command for showing things about the program being debugged.
+
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of user-settable breakpoints
+info catch -- Exceptions that can be caught in the current stack frame
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info functions -- All function names
+info handle -- What debugger does when program gets various signals
+info inferiors -- IDs of currently known inferiors
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+info symbol -- Describe what symbol is at location ADDR
+info target -- Names of targets and files being debugged
+info tasks -- Provide information about all known Ada tasks
+info terminal -- Print inferior's saved terminal status
+info threads -- IDs of currently known threads
+info tracepoints -- Status of tracepoints
+info tvariables -- Status of trace state variables and their values
+info types -- All type names
+info variables -- All global and static variable names
+info vector -- Print the status of the vector unit
+info warranty -- Various kinds of warranty you do not have
+info watchpoints -- Status of watchpoints
+info win -- List of all displayed windows
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+Argument required.
+Argument required.
+Using memory regions provided by the target.
+There are no memory regions defined.
+The program is not being run.
+Starting program: /home/huawei-code-craft/SDK-gcc/bin/future_net 
+[Thread debugging using libthread_db enabled]
+
+Breakpoint 1, main (argc=1, argv=0xbffff254) at /home/huawei-code-craft/SDK-gcc/future_net/future_net.cpp:11
+11	    print_time("Begin");
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.80.el6.i686 libgcc-4.4.7-16.el6.i686 libstdc++-4.4.7-16.el6.i686
+Using memory regions provided by the target.
+There are no memory regions defined.
+Argument required (address).
+Type       Description 
+processes  Listing of all processes 
+All defined types:
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/cwchar:
+typedef __gnu_cxx;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/ext/new_allocator.h:
+__gnu_cxx::new_allocator<char>;
+__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<int const, int> > >;
+__gnu_cxx::new_allocator<std::pair<int const, int> >;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/debug/debug.h:
+typedef __gnu_debug;
+
+File /usr/include/wchar.h:
+__mbstate_t;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.h:
+enu_VertexInfo;
+
+File /usr/include/locale.h:
+lconv;
+
+File <built-in>:
+typedef std;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+std::_Ios_Fmtflags;
+std::_Ios_Iostate;
+std::_Ios_Openmode;
+std::_Ios_Seekdir;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_tree.h:
+std::_Rb_tree<int, std::pair<int const, int>, std::_Select1st<std::pair<int const, int> >, std::less<int>, std::allocator<std::pair<int const, int> > >;
+std::_Rb_tree<int, std::pair<int const, int>, std::_Select1st<std::pair<int const, int> >, std::less<int>, std::allocator<std::pair<int const, int> > >::_Rb_tree_impl<std::less<int>, false>;
+std::_Rb_tree_color;
+std::_Rb_tree_const_iterator<std::pair<int const, int> >;
+std::_Rb_tree_iterator<std::pair<int const, int> >;
+std::_Rb_tree_node<std::pair<int const, int> >;
+std::_Rb_tree_node_base;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_function.h:
+std::_Select1st<std::pair<int const, int> >;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/debug/debug.h:
+typedef std::__debug;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stringfwd.h:
+std::allocator<char>;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/allocator.h:
+std::allocator<std::_Rb_tree_node<std::pair<int const, int> > >;
+std::allocator<std::pair<int const, int> >;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stringfwd.h:
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/basic_string.h:
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider;
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep;
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep_base;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_function.h:
+std::binary_function<int, int, bool>;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/i686-redhat-linux/bits/ctype_base.h:
+std::ctype_base;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+std::ios_base::Init;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_function.h:
+std::less<int>;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/locale_classes.h:
+std::locale;
+std::locale::_Impl;
+std::locale::id;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_map.h:
+std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > >;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/new:
+std::nothrow_t;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_pair.h:
+std::pair<int const, int>;
+std::pair<std::_Rb_tree_iterator<std::pair<int const, int> >, bool>;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_function.h:
+std::unary_function<std::pair<int const, int>, int const>;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.h:
+str_crossList;
+str_crossListArc;
+str_crosslistHeadColumn;
+str_crosslistHeadRow;
+
+File /usr/include/time.h:
+tm;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/i686-redhat-linux/bits/atomic_word.h:
+typedef int _Atomic_word;
+
+File /usr/include/stdio.h:
+typedef _IO_FILE __FILE;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/include/stdarg.h:
+typedef char * __gnuc_va_list;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/i686-redhat-linux/bits/gthr-default.h:
+typedef int __gthread_once_t;
+
+File /usr/include/bits/types.h:
+typedef int __int32_t;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.cpp:
+typedef bool;
+typedef char;
+typedef double;
+typedef float;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+typedef std::_Ios_Fmtflags fmtflags;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.cpp:
+typedef int;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+typedef std::_Ios_Iostate iostate;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.cpp:
+typedef long;
+typedef long double;
+typedef long long;
+
+File /usr/include/wchar.h:
+typedef __mbstate_t mbstate_t;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+typedef std::_Ios_Openmode openmode;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.h:
+typedef str_crossList * pCrossListHead;
+typedef str_crossListArc * pcrossListArc;
+
+File /usr/include/bits/pthreadtypes.h:
+typedef int pthread_once_t;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/include/stddef.h:
+typedef int ptrdiff_t;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+typedef std::_Ios_Seekdir seekdir;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.cpp:
+typedef short;
+typedef signed char;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/include/stddef.h:
+typedef unsigned int size_t;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_tree.h:
+typedef std::_Rb_tree_node_base * std::_Rb_tree_node_base::_Base_ptr;
+typedef const std::_Rb_tree_node_base * std::_Rb_tree_node_base::_Const_Base_ptr;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/i686-redhat-linux/bits/ctype_base.h:
+typedef unsigned short std::ctype_base::mask;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/locale_classes.h:
+typedef int std::locale::category;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/iosfwd:
+typedef std::basic_ostream<char, std::char_traits<char> > std::ostream;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stringfwd.h:
+typedef std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::string;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.h:
+typedef unsigned short u_short;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.cpp:
+typedef unsigned char;
+typedef unsigned int;
+typedef unsigned long;
+typedef unsigned long long;
+typedef unsigned short;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.h:
+typedef enu_VertexInfo vertexInfo;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.cpp:
+typedef wchar_t;
+
+File /usr/include/wctype.h:
+typedef const __int32_t * wctrans_t;
+typedef unsigned long wctype_t;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/include/stddef.h:
+typedef unsigned int wint_t;
+
+File /usr/include/libio.h:
+_IO_FILE;
+_IO_marker;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/cpp_type_traits.h:
+typedef __gnu_cxx;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/ext/new_allocator.h:
+__gnu_cxx::new_allocator<char>;
+__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<int const, int> > >;
+__gnu_cxx::new_allocator<std::pair<int const, int> >;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/debug/debug.h:
+typedef __gnu_debug;
+
+File /usr/include/wchar.h:
+__mbstate_t;
+
+File /usr/include/locale.h:
+lconv;
+
+File <built-in>:
+typedef std;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+std::_Ios_Fmtflags;
+std::_Ios_Iostate;
+std::_Ios_Openmode;
+std::_Ios_Seekdir;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_tree.h:
+std::_Rb_tree<int, std::pair<int const, int>, std::_Select1st<std::pair<int const, int> >, std::less<int>, std::allocator<std::pair<int const, int> > >;
+std::_Rb_tree<int, std::pair<int const, int>, std::_Select1st<std::pair<int const, int> >, std::less<int>, std::allocator<std::pair<int const, int> > >::_Rb_tree_impl<std::less<int>, false>;
+std::_Rb_tree_color;
+std::_Rb_tree_const_iterator<std::pair<int const, int> >;
+std::_Rb_tree_iterator<std::pair<int const, int> >;
+std::_Rb_tree_node<std::pair<int const, int> >;
+std::_Rb_tree_node_base;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/iomanip:
+std::_Resetiosflags;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_function.h:
+std::_Select1st<std::pair<int const, int> >;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/iomanip:
+std::_Setw;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/debug/debug.h:
+typedef std::__debug;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/allocator.h:
+std::allocator<char>;
+std::allocator<std::_Rb_tree_node<std::pair<int const, int> > >;
+std::allocator<std::pair<int const, int> >;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stringfwd.h:
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/basic_string.h:
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider;
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep;
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep_base;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_function.h:
+std::binary_function<int, int, bool>;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/i686-redhat-linux/bits/ctype_base.h:
+std::ctype_base;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+std::ios_base::Init;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_function.h:
+std::less<int>;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/locale_classes.h:
+std::locale;
+std::locale::_Impl;
+std::locale::id;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_map.h:
+std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > >;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/new:
+std::nothrow_t;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_pair.h:
+std::pair<int const, int>;
+std::pair<std::_Rb_tree_iterator<std::pair<int const, int> >, bool>;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_function.h:
+std::unary_function<std::pair<int const, int>, int const>;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.h:
+str_crossList;
+str_crossListArc;
+str_crosslistHeadColumn;
+str_crosslistHeadRow;
+
+File /usr/include/time.h:
+tm;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/i686-redhat-linux/bits/atomic_word.h:
+typedef int _Atomic_word;
+
+File /usr/include/libio.h:
+typedef void _IO_lock_t;
+
+File /usr/include/stdio.h:
+typedef _IO_FILE __FILE;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/include/stdarg.h:
+typedef char * __gnuc_va_list;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/i686-redhat-linux/bits/gthr-default.h:
+typedef int __gthread_once_t;
+
+File /usr/include/bits/types.h:
+typedef int __int32_t;
+typedef long long __off64_t;
+typedef long __off_t;
+typedef long long __quad_t;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/route.cpp:
+typedef bool;
+typedef char;
+typedef double;
+typedef float;
+typedef int;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+typedef std::_Ios_Iostate iostate;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/route.cpp:
+typedef long;
+typedef long double;
+typedef long long;
+
+File /usr/include/wchar.h:
+typedef __mbstate_t mbstate_t;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+typedef std::_Ios_Openmode openmode;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.h:
+typedef str_crossList * pCrossListHead;
+typedef str_crossListArc * pcrossListArc;
+
+File /usr/include/bits/pthreadtypes.h:
+typedef int pthread_once_t;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/include/stddef.h:
+typedef int ptrdiff_t;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+typedef std::_Ios_Seekdir seekdir;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/route.cpp:
+typedef short;
+typedef signed char;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/include/stddef.h:
+typedef unsigned int size_t;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stl_tree.h:
+typedef std::_Rb_tree_node_base * std::_Rb_tree_node_base::_Base_ptr;
+typedef const std::_Rb_tree_node_base * std::_Rb_tree_node_base::_Const_Base_ptr;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+typedef std::_Ios_Fmtflags std::_Resetiosflags::fmtflags;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/i686-redhat-linux/bits/ctype_base.h:
+typedef unsigned short std::ctype_base::mask;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/locale_classes.h:
+typedef int std::locale::category;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/iosfwd:
+typedef std::basic_ostream<char, std::char_traits<char> > std::ostream;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stringfwd.h:
+typedef std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::string;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/my_dealData.h:
+typedef unsigned short u_short;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/route.cpp:
+typedef unsigned char;
+typedef unsigned int;
+typedef unsigned long;
+typedef unsigned long long;
+typedef unsigned short;
+typedef wchar_t;
+
+File /usr/include/wctype.h:
+typedef const __int32_t * wctrans_t;
+typedef unsigned long wctype_t;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/include/stddef.h:
+typedef unsigned int wint_t;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/cpp_type_traits.h:
+typedef __gnu_cxx;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/ext/new_allocator.h:
+__gnu_cxx::new_allocator<char>;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/debug/debug.h:
+typedef __gnu_debug;
+
+File /usr/include/wchar.h:
+__mbstate_t;
+
+File /usr/include/locale.h:
+lconv;
+
+File <built-in>:
+typedef std;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+std::_Ios_Fmtflags;
+std::_Ios_Iostate;
+std::_Ios_Openmode;
+std::_Ios_Seekdir;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/debug/debug.h:
+typedef std::__debug;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/allocator.h:
+std::allocator<char>;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/stringfwd.h:
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/basic_string.h:
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider;
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep;
+std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep_base;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/i686-redhat-linux/bits/ctype_base.h:
+std::ctype_base;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+std::ios_base::Init;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/locale_classes.h:
+std::locale;
+std::locale::_Impl;
+std::locale::id;
+
+File /usr/include/time.h:
+tm;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/i686-redhat-linux/bits/atomic_word.h:
+typedef int _Atomic_word;
+
+File /usr/include/stdio.h:
+typedef _IO_FILE __FILE;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/include/stdarg.h:
+typedef char * __gnuc_va_list;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/i686-redhat-linux/bits/gthr-default.h:
+typedef int __gthread_once_t;
+
+File /usr/include/bits/types.h:
+typedef int __int32_t;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/future_net.cpp:
+typedef bool;
+typedef char;
+typedef double;
+typedef float;
+
+File /usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/bits/ios_base.h:
+typedef std::_Ios_Fmtflags fmtflags;
+
+File /home/huawei-code-craft/SDK-gcc/future_net/future_net.cpp:
+typedef int;
+Quit
+if
+ignore
+inferior
+info
+init-if-undefined
+inspect
+interpreter-exec
+interrupt
+backtrace
+bookmark
+break
+bt
+#0  main (argc=1, argv=0xbffff254) at /home/huawei-code-craft/SDK-gcc/future_net/future_net.cpp:11
+19	    char *graph_file = argv[1];
+#0  main (argc=1, argv=0xbffff254) at /home/huawei-code-craft/SDK-gcc/future_net/future_net.cpp:19
+20	    edge_num = read_file(graph, 5000, graph_file);
+24	    std::cout << "\n.........edge_num =" << edge_num << std::endl;
+25		for(int i=0; i<edge_num; i++) // edge_num
+51	    release_buff(&condition, condition_num);
+Breakpoint 2 at 0x804d5ac: file /home/huawei-code-craft/SDK-gcc/future_net/future_net.cpp, line 51.
+Undefined command: "nt".  Try "help".
+#0  main (argc=1, argv=0xbffff254) at /home/huawei-code-craft/SDK-gcc/future_net/future_net.cpp:51
+53	    print_time("End");
+#0  main (argc=1, argv=0xbffff254) at /home/huawei-code-craft/SDK-gcc/future_net/future_net.cpp:53
+A debugging session is active.
+
+	Inferior 1 [process 6268] will be killed.
+
+Quit anyway? (y or n) 
